@@ -36,7 +36,7 @@
             <div class="container">
                   <div class="row">
                         <div class="about-col-1">
-                              <img src="myimage.jpeg">
+                              <img src="images/myimage.jpeg">
                         </div>
                         <div class="about-col-2">
                               <h1 class="sub-title">About me</h1>
@@ -85,20 +85,20 @@
             <div class="project-list">
                   <div>
                         <h2>Weather App</h2>
-                        <img src="Weather.png">
+                        <img src="images/Weather.png">
                         <p>This website show the weather description of a area searched for.</p>
                         <a href="https://santosh1228.github.io/Weather-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
                   
                   <div>
                         <h2>CoronaMeter</h2>
-                        <img src="CoronaMeter (2).png" >
+                        <img src="images/CoronaMeter (2).png" >
                         <p>This website show the number of live cases and total number of death of the country searced for.</p>
                         <a href="https://santosh1228.github.io/Cases-of-Covid19/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
                   <div>
                         <h2>Calculator</h2>
-                        <img src="calculator.png" >
+                        <img src="images/calculator.png" >
                         <p>This website  calculte the arithmetic operation.</p>
                         <a href="https://santosh1228.github.io/mycalculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   
@@ -127,7 +127,7 @@
                               <a href="https://twitter.com/Santosh50493531"><i class="fa-brands fa-square-x-twitter"></i></a>
                         </div>
                         <div class="social-icons">
-                              <a href="Myresume.pdf" download class="btn btn2">Download Resume</a>
+                              <a href="images/Myresume.pdf" download class="btn btn2">Download Resume</a>
                         </div>
                   </div>
                   <div class="contact-right">
@@ -149,49 +149,8 @@
       <p class="copyright">@Copyright 2024 Santosh Kumar's Portfolio</p>
 </footer>
 
-<!--Script-->
-      <script>
-            var tablinks=document.getElementsByClassName("tab-links");
-            var tabcontents=document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                  for(tablink of tablinks){
-                        tablink.classList.remove("active-link");
-                  }
-                  for(tabcontent of tabcontents){
-                        tabcontent.classList.remove("active-tab");
-                  }
-                  event.currentTarget.classList.add("active-link");
-                  document.getElementById(tabname).classList.add("active-tab")
-            }
-
-      </script>
-      <script>
-            var sidemenu=document.getElementById("sidemenu");
-            function openmenu(){
-                  sidemenu.style.right ="0";
-            }
-            function closemenu (){
-                  sidemenu.style.right ="-200px";
-            }
-      </script>
-      <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyjA7vU0lJ3cPzb3ZK_4MWTR24ALzlVfPVdCUreMcd4gF1o5HG7-E2-ejB-eQsJawrSxQ/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg=document.getElementById("msg")
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                  msg.innerHTML="Message sent successfully"
-                  setTimeout(function(){
-                        msg.innerHTML=""
-                  },5000)
-                  form.reset();
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
+<!--Script-->   
+<script src="script.js" ></script> 
       
       
 </body>
