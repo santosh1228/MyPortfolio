@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/2a62d3943f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <div id="header">
+            <div class="container">
+                  <nav>
+                        <!--<ul class="logo"><span>𝕊</span>ANTOSH</ul>-->
+                        <p class="logo"><span><b>SAN</b></span>TOSH</p>
+                        
+                        <ul id="sidemenu">
+                              <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                              <li><a href="#header">Home</a></li>
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#projects">Project</a></li>
+                              
+                              <li><a href="#contact">Contact</a></li>
+                              
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                  </nav>
+                  <div class="header-text">
+                        <p>Fronted Web Developer</p>
+                        <h1>Hi, I'm <span>Santosh Kumar</span><br> From India</h1>
+                  </div>
+            </div>
+      </div>
+      <!------------- about -->
+      <div id="about">
+            <div class="container">
+                  <div class="row">
+                        <div class="about-col-1">
+                              <img src="myimage.jpeg">
+                        </div>
+                        <div class="about-col-2">
+                              <h1 class="sub-title">About me</h1>
+                              <p>I am enthusiastic learner and always inclined towards acquiring accuracy in work. I am willing and eager to learn new technologies,
+                                    methodologies, skills and expand the horizons, while working as an individual or as a group.</p>
+                              <div class="tab-title">
+                                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                              </div>
+                              <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                          <li><span>Programming Language</span><br>C, C++, STL, Data Structure and Algorithm, Object Oriented Programming, Python(Familiar)</li>
+                                          <li><span>Web Development</span><br>HTML, CSS, Javascript, Node.Js </li>
+                                          <li><span>Database</span><br>SQL, MongoDb</li>
+                                    </ul>
+                              </div>
+                              <div class="tab-contents" id="experience">
+                                    <ul>
+                                          <li><span>Web Developer</span><br>Intern<br>Zidio Development<br>(02-2024)-(04-2024)</li>
+                                    </ul>
+                              </div>
+                              <div class="tab-contents" id="certificates">
+                                    <ul>
+                                          <li><span>Certified by Coursera in HTML, CSS (03/2022 - Present)</span><br><a href="https://coursera.org/share/9534200235c179062ea6077f21c5b81a">Credential</a></a></li>
+                                          <li><span>Certified by Coursera in Python (04/2022 - Present)</span><br><a href="https://coursera.org/share/ae827888afaf0041e9fdef4b199049cd">Credential</a></li>
+                                    </ul>
+                              </div>
+                              <div class="tab-contents" id="education">
+                                    <ul>
+                                          <li><span>2019-2023</span><br>B.Tech(CSE)<br>Techno India University, Kolkata<br>8.67 CGPA</li>
+                                          <li><span>2016-2018</span><br>Higher Secondary<br>Trident Public School, Muzaffarpur<br>74.8 %</li>
+                                          <li><span>2015-2016</span><br>Secondary <br>Holy Cross Public School, Muzaffarpur<br>10 CGPA</li>
+                                    </ul>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+      </div>
+<!--- Projects-->
+<div id="projects">
+      <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                  <div>
+                        <h2>Weather App</h2>
+                        <img src="Weather.png">
+                        <p>This website show the weather description of a area searched for.</p>
+                        <a href="https://santosh1228.github.io/Weather-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+                  
+                  <div>
+                        <h2>CoronaMeter</h2>
+                        <img src="CoronaMeter (2).png" >
+                        <p>This website show the number of live cases and total number of death of the country searced for.</p>
+                        <a href="https://santosh1228.github.io/Cases-of-Covid19/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+                  <div>
+                        <h2>Calculator</h2>
+                        <img src="calculator.png" >
+                        <p>This website  calculte the arithmetic operation.</p>
+                        <a href="https://santosh1228.github.io/mycalculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  
+                  </div>
+            </div>
+      </div>
+</div>
+<!--- Contact-->
+<div id="contact">
+      
+      <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                  
+                  <div class="contact-left">
+                        
+                        <p><i class="fa-regular fa-envelope"></i>santosh.kr1228@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 7424947923</p>
+                        <div class="social-icons">
+                              <a href="https://leetcode.com/skumar20092001/">Leetcode</a>
+                              <a href="https://www.geeksforgeeks.org/user/skumar20092001/">Geeks for Geeks</a>
+                        </div>
+                        <div class="social-icons">
+                              <a href="https://www.linkedin.com/in/santosh-kumar-1b2a40214/"><i class="fa-brands fa-linkedin"></i></a>
+                              <a href="https://github.com/santosh1228/"><i class="fa-brands fa-github"></i></a>
+                              <a href="https://twitter.com/Santosh50493531"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        </div>
+                        <div class="social-icons">
+                              <a href="Myresume.pdf" download class="btn btn2">Download Resume</a>
+                        </div>
+                  </div>
+                  <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                              <input type="text" name="Name" placeholder="Your Name" required>
+                              <input type="email" name="Email" placeholder="Your Email" required>
+                              <textarea name="Message" id="" cols="20" rows="6" placeholder="Your Message"></textarea>
+                              <button type="submit" class="btn  btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                  </div>
+            </div>
+      </div>
+      
+</div>
+
+<!---footer-->
+<footer>
+      <p class="copyright">@Copyright 2024 Santosh Kumar's Portfolio</p>
+</footer>
+
+<!--Script-->
+      <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                  for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                  }
+                  for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                  }
+                  event.currentTarget.classList.add("active-link");
+                  document.getElementById(tabname).classList.add("active-tab")
+            }
+
+      </script>
+      <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+                  sidemenu.style.right ="0";
+            }
+            function closemenu (){
+                  sidemenu.style.right ="-200px";
+            }
+      </script>
+      <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyjA7vU0lJ3cPzb3ZK_4MWTR24ALzlVfPVdCUreMcd4gF1o5HG7-E2-ejB-eQsJawrSxQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                  msg.innerHTML="Message sent successfully"
+                  setTimeout(function(){
+                        msg.innerHTML=""
+                  },5000)
+                  form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+      
+      
+</body>
+</html>
